@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   <div class="container"> 
+       <div class="background">
+            <div class="banner">
+                    <img src="img/odin-lined.png" class="logo">
+                    <div class="text">Odin</div>
+            </div>
+            <div class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on 
+                                            <a href="https://unsplash.com/">Unsplash</a></div>
+            </div>
+       <div class="sign-up">
+           <div class="explain">This is not a real online service! You know you need something<br>
+            like this in your life to help you realize your deepest dreams.<br> Sign up now to get started.<p>You know you want to.</div>
+           <div class="form">
+               <div>Let's do this!</div>
+               <div class="block">
+                   <div class="input-box">
+                       <label for="first-name">FIRST NAME</label>
+                       <input type="text" id="first-name"  name="first-name">
+                   </div>
+                <div class="input-box">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name"  name="last-name">
+                </div>
+              </div>
+              
+              <div class="block">
+                  <div class="input-box">
+                      <label for="email">EMAIL</label>
+                      <input type="email" id="email"  name="email" > </input>
+                  </div>
+                <div class="input-box">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="number" id="phone-number"  name="phone-number" > </input>
+                </div>
+              </div>
+            
+              <div class="block"> 
+                <div class="input-box">
+                      <label for="password">PASSWORD</label>
+                      <input type="password" id="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" maxlength="15" >
+                  </div>
+                  <div class="input-box">
+                    <label for="confirm">CONFIRM PASSWORD</label>
+                    <input type="password" id=confirm"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" maxlength="15" >
+                </div>
+              </div>
+           </div>
+           <div class="create">
+               <button class="create-account">Create Account</button> 
+               <div>Already have an account? Log in</div>
+            </div>
+       </div>
+   </div> 
+</body>
+</html>

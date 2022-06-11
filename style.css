@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url('https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf');
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.background{
+    width: 500px;
+    background: url(../Project-SIGN-UP-FORM/img/halie-west.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sign-up{
+    flex: 1;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.credit{
+    color: white;
+    position: fixed;
+    bottom: 0;
+    opacity: 0.75;
+    padding-bottom: 1rem;
+    font-size: small;
+}
+
+.banner{
+    position: fixed;
+    color: white;
+    font-size: 80px;
+    font-family: 'Norse Bold';
+    background-color: black;
+    opacity: 0.7;
+    width: 500px;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.logo{
+    width: 20%;
+    height: auto;
+}
+
+a {
+    color: white;
+  }
+
+.text{
+    margin-top: 15px;
+}
+
+.explain{
+    height: 30vh;
+    padding-left: 50px;
+    padding-top: 80px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.form{
+    flex: 1;
+    background-color: #ffffff;
+    padding-left: 50px;
+}
+
+.create{
+    flex: 2;
+    padding-left: 50px;
+}
+
+.create-account {
+	background-color:#596D48;
+	border-radius:6px;
+	border:1px solid #596D48;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 45px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #596D48;
+}
+.create-account:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+.create-account:active {
+	position:relative;
+	top:1px;
+}
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0px 10px 10px 0px
+  }
+
+  label {
+    color: black;
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    display: flex;
+    }
+
+    .block{
+        display: flex;
+    }
+
+    .input-box{
+        padding-right: 50px;
+    }
