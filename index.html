@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
    <div class="container"> 
@@ -18,46 +19,50 @@
                                             <a href="https://unsplash.com/">Unsplash</a></div>
             </div>
        <div class="sign-up">
-           <div class="explain">This is not a real online service! You know you need something<br>
-            like this in your life to help you realize your deepest dreams.<br> Sign up now to get started.<p>You know you want to.</div>
-           <div class="form">
-               <div>Let's do this!</div>
+           <div class="explain">
+               <div class="explain-box">
+               This is not a real online service! You know you need something<br>
+            like this in your life to help you realize your deepest dreams.<br> Sign up now to get started.<p>You know you want to.
+               </div>
+            </div>
+           <form class="form" action="http://httpbin.org/post" method="post">
+               <h3>Let's do this!</h3>
                <div class="block">
                    <div class="input-box">
-                       <label for="first-name">FIRST NAME</label>
-                       <input type="text" id="first-name"  name="first-name">
+                       <label for="first-name" >FIRST NAME</label>
+                       <input type="text" id="first-name"  name="first-name" required>
                    </div>
                 <div class="input-box">
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name"  name="last-name">
+                    <input type="text" id="last-name"  name="last-name" required>
                 </div>
               </div>
               
               <div class="block">
                   <div class="input-box">
                       <label for="email">EMAIL</label>
-                      <input type="email" id="email"  name="email" > </input>
+                      <input type="email" id="email"  name="email" required> </input>
                   </div>
                 <div class="input-box">
                     <label for="phone-number">PHONE NUMBER</label>
-                    <input type="number" id="phone-number"  name="phone-number" > </input>
+                    <input type="tel" id="phone-number"  name="phone-number" maxlength="10" required> </input>
                 </div>
               </div>
             
               <div class="block"> 
                 <div class="input-box">
                       <label for="password">PASSWORD</label>
-                      <input type="password" id="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" maxlength="15" >
+                      <input type="password" id="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" maxlength="15" required >
                   </div>
                   <div class="input-box">
-                    <label for="confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id=confirm"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" maxlength="15" >
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id=confirm-password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" maxlength="15" required >
                 </div>
               </div>
-           </div>
+           </form>
            <div class="create">
-               <button class="create-account">Create Account</button> 
-               <div>Already have an account? Log in</div>
+               <button class="create-account" type="submit">Create Account</button> 
+               <div>Already have an account? <a style="color:#596D48; font-weight: bold;">Log in</a> </div>
             </div>
        </div>
    </div> 
