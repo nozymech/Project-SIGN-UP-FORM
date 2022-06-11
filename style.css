@@ -38,7 +38,7 @@ body{
 
 .credit{
     color: white;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     opacity: 0.75;
     padding-bottom: 1rem;
@@ -46,7 +46,7 @@ body{
 }
 
 .banner{
-    position: fixed;
+    position: absolute;
     color: white;
     font-size: 80px;
     font-family: 'Norse Bold';
@@ -75,7 +75,7 @@ a {
 }
 
 .explain{
-    height: 40vh;
+    height: 36vh;
     padding-left: 50px;
     font-size: larger;
     font-weight: bold;
